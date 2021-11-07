@@ -1,0 +1,41 @@
+{% load static %}
+
+<div class="container-fluid fixed bg-black">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'index' %}">
+                <img src="{% static 'img/logo/logo_site.png' %}" class="img-fluid" alt="" width="230" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 22px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-1 p-1 fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'sobre' %}">Empresa</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Serviços
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="{% url 'assessoria' %}">Assessoria Técnica</a></li>
+                            <li><a class="dropdown-item" href="{% url 'laudos' %}">Laudos Técnicos</a></li>
+                            <li><a class="dropdown-item" href="{% url 'pericias' %}">Perícias</a></li>
+                            <li><a class="dropdown-item" href="{% url 'treinamentos' %}">Treinamentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'clientes' %}">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contato' %}">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

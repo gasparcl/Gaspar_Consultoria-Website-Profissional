@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="imagemhead">
+    <div class="textohead">
+        <h1>Perícias Trabalhistas</h1>
+    </div>  
+</div>
+<div class="container shadow bg-body">
+    <div class="row d-flex justify-content-center p-5">
+    	<div class="col-9 p-5 mt-2 border border-2 border-dark rounded" style="background-color: rgb(236, 230, 230);">
+			<h4 style="font-size: 30px;"><b>Assistência Técnica em Perícias Trabalhistas</b></h4>
+            <hr>
+            <h4>
+                <u>Peritos especializados com vasta experiência em perícias:</u>
+                <ul>
+                    <br>
+                    <li>Periculosidade</li>
+                    <li>Insalubridade</li>
+                </ul>
+                <hr>
+                <u>Etapas:</u>
+                <ol>
+                    <br>
+                    <li>Estudo do Processo: Inicial e Contestação</li>
+                    <li>Elaboração dos Quesitos</li>
+                    <li>Contato com o perito judicial</li>
+                    <li>Perícia em dia e hora agendados pelo perito</li>
+                    <li>Elaboração do "Parecer Técnico Pericial"</li>
+                    <li>Impugnação (caso o laudo pericial não seja favorável à empresa):
+                        <ul>
+                            <li>Estudo do laudo pericial</li>
+                            <li>Elaboração de subsídios para contestação</li>
+                            <li>Elaboração de quesitos suplementares</li>
+                        </ul>
+                    </li>
+                </ol>
+			</h4>
+		</div>
+	</div>
+</div>
+
+{% include 'partials/_footer.html' %}
+{% endblock %}
