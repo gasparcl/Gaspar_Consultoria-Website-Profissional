@@ -2,14 +2,16 @@
 {% block content %}
 {% load static %}
 
+{% include 'partials/_menu.html' %}
 <div class="imagemhead">
     <div class="textohead">
-        <h1>Nossos Clientes</h1>
+        <p>Nossos Clientes</p>
     </div>  
 </div>
-<div class="container shadow bg-body"> 
+<div class="container shadow bg-body">
+  <br><br><br><br> 
     <div class="row justify-content-center">
-    	<div class="col-9 border border-1 border-dark rounded" style="background-color: rgb(236, 230, 230); margin-top: 170px;">
+    	<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 rounded" style="background-color: rgb(236, 230, 230);">
             <div class="row row-cols-1 row-cols-md-4 g-3 mt-4 mb-5">
                 <div class="col">
                   <div class="card">
@@ -64,7 +66,7 @@
             </div>
         </div>
     </div>
-    <br><br><br><br><br><br><br>
+    <br><br><br><br>
 </div>
 {% include 'partials/_footer.html' %}
 {% endblock %}

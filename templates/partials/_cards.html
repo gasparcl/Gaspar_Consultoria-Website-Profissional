@@ -1,44 +1,46 @@
 {% load static %}
 
-<div class="row row-cols-1 row-cols-md-4 g-3 p-4 mt-2 text-center">
-    <div class="col">
-      <div class="card p-2">
-        <a href="{% url 'pericias' %}" style="color: black; text-decoration: none;">
-        <img src="{% static 'gaspar_consultoria/images/img-15.jpg' %}" class="card-img-top" style="height: 218px;" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Perícias</h5>
+<div class="container-fluid">
+  <div class="row row-cols-1 row-cols-md-4 g-3 p-4 mt-2 text-center">
+      <div class="col">
+        <div class="card">
+          <a class="index-font" href="{% url 'pericias' %}">
+          <img src="{% static 'gaspar_consultoria/images/img-15.jpg' %}" class="img-fluid img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Perícias</h5>
+          </div>
+          </a>
         </div>
-        </a>
       </div>
-    </div>
-    <div class="col">
-      <div class="card p-2">
-        <a href="{% url 'laudos' %}" style="color: black; text-decoration: none;">
-        <img src="{% static 'gaspar_consultoria/images/img-12.jpg' %}" class="card-img-top" style="height: 218px;" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Laudos Técnicos</h5>
+      <div class="col">
+        <div class="card">
+          <a class="index-font" href="{% url 'laudos' %}">
+          <img src="{% static 'gaspar_consultoria/images/img-12.jpg' %}" class="img-fluid img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Laudos Técnicos</h5>
+          </div>
+          </a>
         </div>
-        </a>
       </div>
-    </div>
-    <div class="col">
-      <div class="card p-2">
-        <a href="{% url 'treinamentos' %}" style="color: black; text-decoration: none;">
-        <img src="{% static 'gaspar_consultoria/images/img-9.jpg' %}" class="card-img-top" style="height: 218px;" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Treinamentos</h5>
+      <div class="col">
+        <div class="card">
+          <a class="index-font" href="{% url 'treinamentos' %}">
+          <img src="{% static 'gaspar_consultoria/images/img-9.jpg' %}" class="img-fluid img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Treinamentos</h5>
+          </div>
+          </a>
         </div>
-        </a>
       </div>
-    </div>
-    <div class="col">
-      <div class="card p-2">
-        <a href="{% url 'assessoria' %}" style="color: black; text-decoration: none;">
-        <img src="{% static 'gaspar_consultoria/images/img-17.jpg' %}" class="card-img-top" style="height: 218px;" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Assessoria Técnica</h5>
+      <div class="col">
+        <div class="card">
+          <a class="index-font" href="{% url 'assessoria' %}">
+          <img src="{% static 'gaspar_consultoria/images/img-17.jpg' %}" class="img-fluid img-card" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Assessoria Técnica</h5>
+          </div>
+          </a>
         </div>
-        </a>
       </div>
-    </div>
   </div>
+</div>

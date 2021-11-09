@@ -2,32 +2,33 @@
 {% block content %}
 {% load static %}
 
+{% include 'partials/_menu.html' %}
 <div class="imagemhead">
     <div class="textohead">
-        <h1>Bem vindo à Gaspar Consultoria<br>Soluções em Segurança do Trabalho</h1>
-    </div>  
+        <p>Bem vindo à Gaspar Consultoria</p>
+    </div>
 </div>
-<div class="container shadow bg-body" style="margin-top:-8px;">
+<div class="container shadow bg-body">
     <br>
     {% include 'partials/_cards.html' %}
     <br>
-    <hr class="text-center" style="width: 1200px; color: rgba(0, 0, 0, 0.822); height: 2px; margin-left: 50px;">
-    <div class="card mb-5 m-5">
-        <div class="row">
-            <div class="col-md-3 mt-4 ms-4 mb-4">
+    <hr>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12  mt-4 ms-4 mb-4">
                 <a href="{% url 'sobre' %}">
-                <img src="{% static 'gaspar_consultoria/images/img-2.jpg' %}" class="img-fluid rounded" alt="...">
+                <img src="{% static 'gaspar_consultoria/images/img-2.jpg' %}" class="img-fluid rounded img-shadow" alt="...">
                 </a>
             </div>
-            <div class="col-md-8 ms-4 mt-4">
-                <div class="card-body m-3">
-                    <a href="{% url 'sobre' %}" style="color: black; text-decoration: none;">
-                    <h3 class="card-title">História</h3>
-                    <p class="card-text" style="font-size: 18px;">A <b>Gaspar Consultoria</b> 
-                        foi fundada em 2014, com a missão de entregar soluções para sua empresa 
-                        em Segurança do Trabalho. <br>Desde a sua fundação, vem prestando serviços 
-                        de forma diferenciada no segmento de <u>engenharia de segurança do trabalho
-                        </u>, através de uma postura de parceria e responsabilidade junto ao 
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 ms-4 mt-4">
+                <div class="m-3">
+                    <a class="index-font" href="{% url 'sobre' %}">
+                    <h3>História</h3>
+                    <p> Fundada em 2014, A <b>Gaspar Consultoria</b> 
+                        tem como missão entregar soluções em Segurança do Trabalho para sua empresa. 
+                        <br>Desde a sua fundação, vem prestando serviços 
+                        de forma diferenciada no segmento de engenharia de segurança do trabalho, 
+                        através de uma postura de parceria e responsabilidade junto ao 
                         cliente, garantindo a execução dos trabalhos no cumprimento da legislação 
                         trabalhista vigente. <br> Se utilizando da expertise de seu corpo de 
                         engenheiros, apresenta um trabalho de qualidade, inovação, sempre embasado 
@@ -40,20 +41,20 @@
             </div>
         </div>
     </div>
-    <hr class="text-center" style="width: 1200px; color: rgba(0, 0, 0, 0.822); height: 2px; margin-left: 50px;">
-    <div class="card mb-0 m-5">
+    <hr>
+    <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-md-5 mt-5" style="align-content: center;">
-                <a href="{% url 'clientes' %}" style="color: black; text-decoration: none;">
-                <h3 class="m-3 mt-5">Clientes</h3>
-                <p class="m-3" style="font-size: 18px;">A <b>Gaspar Consultoria</b> trabalha gerando valor para diversas empresas
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a class="index-font" href="{% url 'clientes' %}">
+                <h3 class="mt-5">Clientes</h3>
+                <p>A <b>Gaspar Consultoria</b> trabalha gerando valor para diversas empresas
                     respeitadas em todo o país. Clique e conheça mais quais são nossos clientes parceiros.                    
                 </p>
                 </a>
             </div>
-            <div class="col-md-4 mt-5 ms-4 mb-5">
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <a href="{% url 'clientes' %}" style="color: black; text-decoration: none;">
-                <img src="{% static 'gaspar_consultoria/images/img-26.jpg' %}" class="img-fluid rounded" alt="...">
+                <img src="{% static 'gaspar_consultoria/images/img-26.jpg' %}" class="img-fluid rounded img-shadow" alt="...">
                 </a>
             </div>
         </div>

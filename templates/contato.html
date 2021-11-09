@@ -2,31 +2,33 @@
 {% block content %}
 {% load static %}
 
+{% include 'partials/_menu.html' %}
 <div class="imagemhead">
     <div class="textohead">
-        <h1>Contato</h1>
+        <p>Contato</p>
     </div>  
 </div>
 <div class="container shadow bg-body">
-	<div class="row d-flex justify-content-center ms-4 p-4">
-        <h3 class="text-center">Formulário de Contato</h3>
-    	<div class="col-8 p-5 mt-2 m-5 border border-1 border-dark rounded" style="background-color: rgb(236, 230, 230);">
+    <br><br><br><br><br>
+	<div class="row justify-content-center">
+        <h4 class="text-center">Formulário de Contato</h4>
+    	<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 p-5 mt-2 rounded" style="background-color: rgb(236, 230, 230);">
             <form action="https://formsubmit.co/peritapatricia@outlook.com" method="POST">
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1" style="font-size: 25px;">Nome</span>
-                    <input type="text" name="name" class="form-control" placeholder="Seu nome aqui" style="font-size: 15px;" aria-label="Name" aria-describedby="basic-addon1" required>
+                    <span class="input-group-text" id="basic-addon1">Nome</span>
+                    <input type="text" name="name" class="form-control" placeholder="Seu nome aqui" aria-label="Name" aria-describedby="basic-addon1" required>
                   </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1" style="font-size: 25px;">Telefone</span>
-                    <input type="tel" name="tel" class="form-control" placeholder="Seu número aqui. Ex: 11940005000" style="font-size: 15px;" aria-label="Tel" aria-describedby="basic-addon1" required>
+                    <span class="input-group-text" id="basic-addon1">Telefone</span>
+                    <input type="tel" name="tel" class="form-control" placeholder="Seu número aqui. Ex: 11940005000" aria-label="Tel" aria-describedby="basic-addon1" required>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1" style="font-size: 25px;">E-mail</span>
-                    <input type="email" name="email" class="form-control" placeholder="exemplo@gmail.com" style="font-size: 15px;" aria-label="Email" aria-describedby="basic-addon1" required>
+                    <span class="input-group-text" id="basic-addon1">E-mail</span>
+                    <input type="email" name="email" class="form-control" placeholder="exemplo@gmail.com" aria-label="Email" aria-describedby="basic-addon1" required>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="basic-addon1" style="font-size: 25px;">Corpo do e-mail</span>
-                    <textarea class="form-control" aria-label="With textarea" placeholder="Digite o corpo do e-mail aqui" style="font-size: 15px;" required></textarea>
+                    <span class="input-group-text" id="basic-addon1">Corpo do e-mail</span>
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Digite o corpo do e-mail aqui" required></textarea>
                 </div>
                 <input type="hidden" name="_cc" value="carvalhol.amt@gmail.com">
                 <input type="hidden" name="_subject" value="Novo E-mail - GASPAR CONSULTORIA!">
@@ -34,12 +36,12 @@
                 <input type="hidden" name="_autoresponse" value="Muito obrigado por entrar em contato com a Gaspar Consultoria. 
                 Iremos responder o mais breve possível.">
                 <div class="button d-flex justify-content-center">
-                    <button class="bg-info rounded-pill mt-2 p-4 py-3 px-5" type="submit" style="font-size: 18px;">Enviar</button>
+                    <button class="bg-info rounded-pill mt-2 p-4 py-1 px-3" type="submit">Enviar</button>
                 </div>
            </form>
         </div>
     </div>
-    <br><br><br>
+    <br><br><br><br><br><br>
 </div>
 {% include 'partials/_footer.html' %}
 

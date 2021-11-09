@@ -1,56 +1,94 @@
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
 
-body, html {
+
+body {
     height: 100%;
-    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    font-family: 'Abel', sans-serif;
+    background-color: dodgerblue;
+}
+
+footer {
+  height: auto;
 }
 
 .imagemhead {
-    background-image: url(../static/img/logo/banner3.jpg);
+    background-image: url(img/logo/banner3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 12%;
+    height: 18vh;
     position: relative;
     object-fit: cover;
   }
 
-.textohead h1{
+.textohead {
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 14vh;
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
-    font-size: 38px;
+    font-size: 1.8rem;
 }
 
 .whatsapp-link {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
-  right: 40px;
+  bottom: 6vh;
+  right: 3.5vh;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
   font-size: 30px;
-  box-shadow: 1px 1px 2px #888;
+  box-shadow: 1px 1px 5px 5px #888;
   z-index: 1000;
 }
 
 .whatsapp-footer {
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  height: auto;
+  margin-top: 2vh;
   color: #fff;
-  text-align: center;
-  font-size: 25px;
+  font-size: 100%;
+  text-decoration: none;
+  font-size: 1.2rem;
 }
 
 .fa-whatsapp {
   margin-top: 16px;
 }
+
+.img-1-footer {
+  margin: 20px;
+  height: auto;
+  width: 15%;
+}
+
+.img-card {
+  height: 21vh;
+  margin-top: 1vh;
+  box-shadow: 4px 4px 4px 1px;
+}
+
+.img-shadow {
+  box-shadow: 4px 4px 4px 1px black;
+}
+
+.fixed {
+  position: fixed;
+  z-index: 1000;
+}
+
+.index-font {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: rgb(31, 30, 30);
+}
+
 
 #navbar {
     background-color: #333;
@@ -75,6 +113,4 @@ body, html {
     background-color: #ddd;
     color: black;
   }
-
-
 
