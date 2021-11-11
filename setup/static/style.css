@@ -1,24 +1,24 @@
 @import url(https://fonts.googleapis.com/css2?family=Oswald:wght@100;200;300;400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Abel&display=swap);
 
+html {
+  background-color: black;
+}
 
 body {
     height: auto;
     width: 100%;
     font-family: 'Abel', sans-serif;
-    background-color: blueviolet;
+    background-color: dodgerblue;
 }
 
-footer {
-  height: auto;
-}
-
+/* Head content */
 .imagemhead {
     background-image: url(img/logo/banner3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 38vh;
+    height: 25vh;
     position: relative;
     object-fit: cover;
   }
@@ -26,91 +26,150 @@ footer {
 .textohead {
     text-align: center;
     position: absolute;
-    top: 14vh;
+    font-weight: bold;
+    top: 19.5vh;
     left: 50%;
     transform: translate(-50%, -50%);
     color:white;
     font-size: 1.8rem;
+    width: auto;
 }
 
+/* Link content */
 .whatsapp-link {
   position: fixed;
-  width: 60px;
-  height: 60px;
-  bottom: 6vh;
-  right: 3.5vh;
+  width: 40px;
+  height: 40px;
+  bottom: 20vh;
+  right: 4vh;
   background-color: #25d366;
   color: #fff;
   border-radius: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   box-shadow: 1px 1px 5px 5px #888;
   z-index: 1000;
 }
-
-.whatsapp-footer {
-  width: 100%;
-  height: auto;
-  margin-top: 2vh;
-  color: #fff;
-  font-size: 100%;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
 .fa-whatsapp {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
-.img-1-footer {
-  margin: 20px;
-  height: auto;
-  width: 15%;
+/* Font & Color content */
+.index-font {
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.card-font{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.services-bg {
+  background-color: rgb(236, 230, 230);
 }
 
+/* Image content */
 .img-card {
-  height: 21vh;
-  margin-top: 1vh;
+  height: auto;
+  width: 100%;
   box-shadow: 4px 4px 4px 1px;
 }
-
 .img-shadow {
   box-shadow: 4px 4px 4px 1px black;
 }
-
 .fixed {
   position: fixed;
   z-index: 1000;
 }
 
-.index-font {
-  font-size: 1.25rem;
+
+/* Footer content */
+footer {
+  height: auto;
+  width: 100%
+}
+.whatsapp-footer {
+  width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-top: 3vh;
+  color: #fff;
   text-decoration: none;
-  color: rgb(31, 30, 30);
+  font-size: 1.2vw;
+}
+.img-1-footer {
+  margin-top: 2vh;
+  height: 6vh;
+  width: auto;
+}
+.footer-text {
+  color: blanchedalmond;
+  font-size: 0.8rem;
 }
 
-
-#navbar {
-    background-color: #333;
-    position: fixed;
-    top: -50px;
-    width: 100%;
-    display: block;
-    transition: top 0.3s;
+@media screen and (min-width: 320px) and (max-width: 767.98px) {
+  .whatsapp-footer {
+    font-size: 3.6vw;
+    margin-top: 2vh;
   }
-  
-#navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px;
+  .index-font {
+    font-size: 1rem;
     text-decoration: none;
-    font-size: 17px;
+    color: rgb(0, 0, 0);
   }
-  
-#navbar a:hover {
-    background-color: #ddd;
-    color: black;
+  .card-font{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  .textohead {
+    top: 18vh;
+    font-size: 1.3rem;
+    width: 320px
+}
+.imagemhead {
+  height: 20vh;
+}
+
+@media screen and (width: 720px) {
+  .img-card {
+    height: auto;
+    width: 23vw;
+    box-shadow: 4px 4px 4px 1px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 2560px) {
+  .img-1-footer {
+    margin-top: 2vh;
+    margin-left: 4vh;
+  }
+  .whatsapp-footer {
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: 3vh;
+    margin-top: 3vh;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.15vw;
   }
 
+}
+
+@media screen and (min-width: 992px) and (max-width: 1399.98px) {
+  .img-card {
+    height: 20vh;
+    width: 23vw;
+    box-shadow: 4px 4px 4px 1px;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2560px) {
+  body {
+    height: auto;
+    zoom: 180%;
+  }
+  .whatsapp-footer {
+    font-size: 0.7vw;
+  } 
+}
